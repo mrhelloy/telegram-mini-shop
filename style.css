@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #18181a;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background: #3a3150;
+  padding: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: #3a3a3a;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  width: 80%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #983df4, #b27af7);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  opacity: 0.9;
+}
+
+/* Корзина */
+#cart-items {
+  padding: 20px;
+}
+
+.cart-item {
+  background: #3a3a3a;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 350px;
+  text-align: left;
+}
+
+.cart-item h4 {
+  margin: 0 0 5px 0;
+}
+
+.cart-item p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cart-buttons .buy {
+  background: linear-gradient(45deg, #983df4, #b27af7);
+  color: white;
+}
+
+.cart-buttons .remove {
+  background: #525159;
+  color: white;
+}
+
+/* Подтверждение */
+#confirm-box {
+  background: #3a3150;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 350px;
+}
+
+#confirm-box button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 45%;
+  cursor: pointer;
+}
+
+#confirm-box .confirm {
+  background: linear-gradient(45deg, #983df4, #b27af7);
+  color: white;
+}
+
+#confirm-box .cancel {
+  background: #525159;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Нижнее меню */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #18181a;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #333;
+}
+
+footer button {
+  min-width: 120px;
+  max-width: 160px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #525159;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer button.active {
+  background: linear-gradient(45deg, #983df4, #b27af7);
+}
+
+footer button:hover {
+  opacity: 0.9;
+}
+
+/* ⚙️ Кнопка настроек */
+.settings-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #983df4;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: 0.2s;
+  z-index: 1001;
+}
+.settings-btn:hover {
+  background: #b27af7;
+}
+
+/* Окно настроек */
+.settings-modal {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: #3a3150;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+.settings-modal.hidden {
+  display: none;
+}
+
+.settings-modal h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.settings-modal select, .settings-modal button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+}
+.settings-modal button {
+  background: #983df4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

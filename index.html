@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Soryyz Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Soryyz Shop</h1>
+  </header>
+
+  <!-- Магазин -->
+  <main id="shop">
+    <div class="products" id="products"></div>
+  </main>
+
+  <!-- Корзина -->
+  <main id="cart" class="hidden">
+    <h2 id="cart-title"></h2>
+    <div id="cart-items"></div>
+  </main>
+
+  <!-- Подтверждение -->
+  <div id="confirm-box" class="hidden">
+    <p id="confirm-text"></p>
+    <button class="confirm" onclick="confirmBuy(true)"></button>
+    <button class="cancel" onclick="confirmBuy(false)"></button>
+  </div>
+
+  <!-- Нижнее меню -->
+  <footer>
+    <button id="shop-btn" onclick="showShop()">Магазин</button>
+    <button id="cart-btn" onclick="showCart()">Корзина</button>
+  </footer>
+
+  <!-- Кнопка шестерёнка -->
+  <div class="settings-btn">⚙️</div>
+
+  <!-- Окно выбора языка -->
+  <div class="settings-modal hidden">
+    <h3>🌐 Выбор языка</h3>
+    <select id="language-select">
+      <option value="ru">Русский</option>
+      <option value="be">Беларуская</option>
+      <option value="ua">Українська</option>
+      <option value="en">English</option>
+    </select>
+    <button id="save-lang">Сохранить</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
